@@ -51,7 +51,7 @@
             android:background="#FFFFFF"
             android:hint="Username"
             android:textSize="18dp"
-            android:inputType="text"/>
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/text_password"
