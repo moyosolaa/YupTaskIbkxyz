@@ -9,22 +9,23 @@
         android:layout_height="wrap_content"
         android:padding="10dp">
 
-        <ImageView
+
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_picture"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:background="#000000" />
+            android:src="@drawable/yupdevs_logo_black"/>
 
         <TextView
             android:id="@+id/contact_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_toRightOf="@+id/profile_picture"
-            android:text="Contact"
+            android:text="Team"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -36,7 +37,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/profile_picture"
             android:layout_below="@+id/contact_name"
-            android:text="Contact"
+            android:text="View"
             android:textColor="#000000"
             android:textSize="12sp" />
 

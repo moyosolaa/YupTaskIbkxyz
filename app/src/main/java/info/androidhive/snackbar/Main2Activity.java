@@ -20,7 +20,9 @@ public class Main2Activity extends AppCompatActivity {
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvContacts);
 
         // Initialize teams
-        teams = Team.createContactsList(20);
+        teams = Team.createContactsList(26);
+
+
 
         // Create adapter passing in the sample user data
         TeamsAdapter adapter = new TeamsAdapter(this, teams);
@@ -30,6 +32,15 @@ public class Main2Activity extends AppCompatActivity {
 
         // Set layout manager to position the items
         rvContacts.setLayoutManager(new LinearLayoutManager(this));
+
+        //Round ImageView
+
+//        ImageView imageround = (ImageView) findViewById(R.id.profile_picture);
+//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.yupdev_code);
+//        RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
+//        roundedBitmapDrawable.setCircular(true);
+//        imageround.setImageDrawable(roundedBitmapDrawable);
+
     }
 
 }

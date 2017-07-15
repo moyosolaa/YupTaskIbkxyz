@@ -24,14 +24,19 @@ public class Team {
         return mOnline;
     }
 
-    private static int lastContactId = 0;
 
     public static ArrayList<Team> createContactsList(int numContacts) {
+
         ArrayList<Team> teams = new ArrayList<Team>();
 
         for (int i = 1; i <= numContacts; i++) {
 
-            teams.add(new Team("Team " + ++lastContactId, i <= numContacts / 2));
+            for(char alphabet = 'A'; alphabet <= 'Z';alphabet++)
+
+            teams.add(new Team("Team " + alphabet, i <= numContacts / 2));
+
+            break;
+
         }
 
         return teams;

@@ -84,7 +84,7 @@ public class TeamsAdapter extends RecyclerView.Adapter<TeamsAdapter.ViewHolder> 
         TextView textView = viewHolder.nameTextView;
         textView.setText(team.getName());
         Button button = viewHolder.messageButton;
-        button.setText("View");
+        button.setText("Join");
     }
 
 
